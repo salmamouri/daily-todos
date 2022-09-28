@@ -7,7 +7,9 @@ import "./Activities.css";
 const Activities = () => {
   const [activities, setActivities] = useState([]);
   const [exTime, setExTime] = useState(0);
-  const [breaktime, setBreaktime] = useState(0);
+  const [breaktime, setBreaktime] = useState(
+    localStorage.getItem("breaktime") ? localStorage.getItem("breaktime") : 0
+  );
 
   useEffect(() => {
     fetch("todosData.json")
@@ -22,6 +24,7 @@ const Activities = () => {
   };
   const setBreak = (time) => {
     setBreaktime(time);
+    localStorage.setItem("breaktime", time);
   };
   return (
     <div className="container">
