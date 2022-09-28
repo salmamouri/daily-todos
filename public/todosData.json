@@ -5,14 +5,15 @@
         "name": "HTML Revision",
         "details": "HTML tags, HTML attributes, form, button, HTML APIs, HTML Media , class and id have to cover within a day. ",
         "img":"images/html.png",
-        " Required Time": "10 hours"
+        "time": "10 hours"
     },
 
     {
         "id": "2",
         "name": "CSS Revision",
+        "img":"images/css.png",
         "details": "CSS Position,Box model, Colors, display, grid and CSS shadow, Transition, media query. ",
-        " Required Time": "8 hours"
+        "time": "8 hours"
     },
 
     {
@@ -20,7 +21,7 @@
         "name": "Bootstrap Revision",
         "details": "Bootsrap 5 , grid, form, container,card, carousel, tooltip, toast , colors, breakpoint ,display, font size etc. ",
         "img":"images/bootstrap-logo.png",
-        " Required Time": "4 hours"
+        "time": "4 hours"
     },
 
     {
@@ -28,7 +29,7 @@
         "name": "Tailwind Revision",
         "details": "Layout, flexbox and grid, spacing, sizing, typography, background, borders, effect, filters , transition etc. ",
         "img":"images/tailwind.png",
-        " Required Time": "5 hours"
+        "time": "5 hours"
     },
 
     {
@@ -36,7 +37,7 @@
         "name": "Javascript Revision",
         "details": "Javascript syntax, js classes, objects, function, async, HTML Dom, Json and ES6 etc. ",
         "img":"images/js.png",
-        " Required Time": "16 hours"
+        "time": "16 hours"
     },
 
     {
@@ -44,7 +45,7 @@
         "name": "React Revision",
         "details": "JSX, Componenets, props, events, router, react hooks, functional components, lifting state up etc. ",
         "img":"images/react.png",
-        " Required Time": "14 hours"
+        "time": "14 hours"
     }
 
 
