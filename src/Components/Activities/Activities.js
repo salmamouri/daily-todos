@@ -1,11 +1,13 @@
 import React, { useEffect, useState } from "react";
 import Activity from "../Activity/Activity";
+import Break from "../Break/Break";
 import Exercise from "../Exercise/Exercise";
 import "./Activities.css";
 
 const Activities = () => {
   const [activities, setActivities] = useState([]);
   const [exTime, setExTime] = useState(0);
+  const [breaktime, setBreaktime] = useState(0);
 
   useEffect(() => {
     fetch("todosData.json")
@@ -18,7 +20,9 @@ const Activities = () => {
     setExTime(totalTime);
     console.log(totalTime);
   };
-
+  const setBreak = (time) => {
+    setBreaktime(time);
+  };
   return (
     <div className="container">
       <div className="activity-container">
@@ -31,7 +35,12 @@ const Activities = () => {
         ))}
       </div>
       <div className="time-container">
-        <Exercise exTime={exTime}></Exercise>
+        <Break setBreak={setBreak}></Break>
+        <Exercise
+          exTime={exTime}
+          breaktime={breaktime}
+          setBreak={setBreak}
+        ></Exercise>
       </div>
     </div>
   );
