@@ -1,8 +1,9 @@
 import React from "react";
 import "./Activity.css";
 
-const Activity = ({ activity }) => {
+const Activity = ({ activity, addToList }) => {
   const { name, img, details, time } = activity;
+
   return (
     <div className="active-container">
       <img src={img} alt="" />
@@ -11,7 +12,9 @@ const Activity = ({ activity }) => {
         <p>Topics: {details}</p>
         <h4>Required Time: {time}</h4>
       </div>
-      <button className="btn-add">Add to list</button>
+      <button onClick={() => addToList(activity)} className="btn-add">
+        Add to list
+      </button>
     </div>
   );
 };
