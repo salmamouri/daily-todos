@@ -1,0 +1,16 @@
+.myinfo-container .info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: lavender;
+  margin: 10px;
+  border-radius: 8px;
+}
+.myinfo-container {
+  text-align: center;
+}
+.myinfo-container p {
+  font-weight: 500;
+  margin-bottom: 10px;
+}

@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import Activity from "../Activity/Activity";
 import Break from "../Break/Break";
 import Exercise from "../Exercise/Exercise";
+import MyInfo from "../MyInfo/MyInfo";
 import "./Activities.css";
 
 const Activities = () => {
@@ -38,6 +39,7 @@ const Activities = () => {
         ))}
       </div>
       <div className="time-container">
+        <MyInfo></MyInfo>
         <Break setBreak={setBreak}></Break>
         <Exercise
           exTime={exTime}
