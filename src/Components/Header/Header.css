@@ -1,0 +1,12 @@
+.header {
+  background-color: steelblue;
+  color: white;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding: 10px;
+}
+.header h1 {
+  margin-left: 25px;
+}
