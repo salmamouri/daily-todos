@@ -1,3 +1,9 @@
+.exercise-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 .exercise-time {
   background-color: lightgray;
   margin: 10px;
@@ -9,4 +15,15 @@
   margin: 10px;
   padding: 8px;
   border-radius: 10px;
+}
+.complete-btn {
+  text-align: center;
+  margin: 30px;
+  width: 100%;
+  border: none;
+  padding: 13px;
+  font-size: 15px;
+  font-weight: 700;
+  color: whitesmoke;
+  background-color: steelblue;
 }
